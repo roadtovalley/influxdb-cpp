@@ -4,6 +4,8 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
+	influxdb_cpp::init();
+
     influxdb_cpp::server_info si("127.0.0.1", 8086, "test", "test", "test");
     // post_http demo with resp[optional]
     string resp;
